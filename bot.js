@@ -32,7 +32,7 @@ bot.on("text", async (ctx) => {
     const [[data]] = await api.getReportsByCountries(ctx.message.text);
     await ctx.replyWithHTML(`
     <b>${data.country.toUpperCase()}</b> 
-________________________________________________
+__________________________________
   <i>Кол-во заболевших: <b>${data.cases}</b></i>
   <i>Кол-во смертей: <b>${data.deaths}</b></i>
   <i>Кол-во выздоровевших: <b>${data.recovered}</b></i>
